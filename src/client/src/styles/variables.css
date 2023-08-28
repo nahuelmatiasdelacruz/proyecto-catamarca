@@ -1,0 +1,13 @@
+:root{
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+    --alice-blue: #e6f1f9ff;
+    --celestial-blue: #3f97d5ff;
+    --french-blue: #0076c8ff;
+    --celestial-blue-2: #3190d2ff;
+    --french-blue-2: #0377c8ff;
+    --grey: #908f8f;
+    --red: #dd5252;
+    --amarillo: #bfd400;
+    --box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.1);
+}
