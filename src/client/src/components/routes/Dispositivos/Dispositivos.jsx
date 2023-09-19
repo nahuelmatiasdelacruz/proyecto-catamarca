@@ -1,5 +1,5 @@
 import React from 'react'
-import HeadDevices from "../../img/head_devices.png";
+import HeadDevices from "../../../img/head_devices.png";
 
 export const Dispositivos = () => {
   return (
@@ -14,6 +14,9 @@ export const Dispositivos = () => {
                 <p>Gestión y configuración de dispositivos. Altas, bajas, configuraciones generales.</p>
               </div>
             </div>
+        </div>
+        <div className="main-area-content">
+
         </div>
     </React.Fragment>
   )

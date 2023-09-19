@@ -1,8 +1,11 @@
 const {Router} = require("express");
 const { marcacionesController } = require("../controllers/marcaciones");
+const { validarJwt } = require("../middlewares/validar-jwt");
 const router = Router();
 
+// router.get("/",[validarJwt],marcacionesController.getMarcaciones);
 router.get("/",marcacionesController.getMarcaciones);
-router.post("/",marcacionesController.addMarcacion);
+router.post("/",[validarJwt],marcacionesController.addMarcacion);
+router.put("/:id",[validarJwt],marcacionesController.editarMarcacion);
 
 module.exports = router;

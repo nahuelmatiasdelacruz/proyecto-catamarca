@@ -18,6 +18,7 @@ const Sidemenu = () => {
         updatedSubMenu[key] = key === menu ? "sub-menu" : "hide";
       }
       setSubMenu(updatedSubMenu);
+      
     }else{
       setSubMenu({
         ...subMenu,
@@ -60,19 +61,19 @@ const Sidemenu = () => {
             <span>Registros</span>  
           </button>
           <div className={subMenu.registros}>
-            <button onClick={()=>{navigate("/")}}>Tiempo Real</button>
-            <button onClick={()=>{navigate("/")}}>Registro Manual</button>
-            <button onClick={()=>{navigate("/")}}>Calendario por Empleado</button>
+            <button onClick={()=>{navigate("/registros/tiempo-real")}}>Tiempo Real</button>
+            <button onClick={()=>{navigate("/registros/manual")}}>Registro Manual</button>
+            <button onClick={()=>{navigate("/registros/calendario")}}>Calendario por Empleado</button>
           </div>
           <button onClick={()=>{showMenu("administracion")}} className="menu-item">
             <MUI.Icons.ManageAccountsIcon/>
             <span>Administración</span>  
           </button>
           <div className={subMenu.administracion}>
-            <button onClick={()=>{navigate("/")}}>ABM Usuarios</button>
-            <button onClick={()=>{navigate("/")}}>Tipos de Licencias</button>
+            <button onClick={()=>{navigate("/administracion/usuarios")}}>ABM Usuarios</button>
+            <button onClick={()=>{navigate("/administracion/licencias")}}>Tipos de Licencias</button>
           </div>
-          <button onClick={()=>{navigate("/licencias")}} className="menu-item">
+          <button onClick={()=>{navigate("/solicitud-licencias")}} className="menu-item">
             <MUI.Icons.BadgeIcon/>
             <span>Sol. de Licencias</span>  
           </button>
@@ -81,8 +82,8 @@ const Sidemenu = () => {
             <span>Reportes</span>  
           </button>
           <div className={subMenu.reportes}>
-            <button onClick={()=>{navigate("/")}}>Estadisticos</button>
-            <button onClick={()=>{navigate("/")}}>Auditoría de registros</button>
+            <button onClick={()=>{navigate("/reportes/estadisticos")}}>Estadisticos</button>
+            <button onClick={()=>{navigate("/reportes/auditoria")}}>Auditoría de registros</button>
           </div>
         </div>
       </div>

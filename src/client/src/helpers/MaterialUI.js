@@ -30,6 +30,9 @@ import DataThresholdingIcon from '@mui/icons-material/DataThresholding';
 import DoDisturbIcon from '@mui/icons-material/DoDisturb';
 import AddIcon from '@mui/icons-material/Add';
 import BadgeIcon from '@mui/icons-material/Badge';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LoginIcon from '@mui/icons-material/Login';
+import LogoutIcon from '@mui/icons-material/Logout';
 import PersonOffIcon from '@mui/icons-material/PersonOff';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import DevicesOtherIcon from '@mui/icons-material/DevicesOther';
@@ -62,6 +65,25 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 
+// MUI X
+
+import { DataGrid,esES } from '@mui/x-data-grid';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { TimePicker } from '@mui/x-date-pickers/TimePicker';
+import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
+
+const MuiX = {
+    DataGrid,
+    esES,
+    AdapterDayjs,
+    LocalizationProvider,
+    DatePicker,
+    TimePicker,
+    DateTimePicker,
+}
+
 const Layout = {
     Box,
     Divider,
@@ -85,10 +107,13 @@ const Icons = {
     Logout,
     DataThresholdingIcon,
     GroupsIcon,
+    LocationOnIcon,
     PersonOffIcon,
     AssignmentIcon,
     MedicalInformationIcon,
     PeopleIcon,
+    LoginIcon,
+    LogoutIcon,
     DashboardIcon,
     BadgeIcon,
     DevicesOtherIcon,
@@ -130,12 +155,13 @@ const Buttons = {
 }
 
 export const MUI = {
-    Layout,
-    Utils,
-    Nav,
-    Icons,
+    Buttons,
     Display,
     Feedback,
+    Icons,
     Inputs,
-    Buttons
+    Layout,
+    MuiX,
+    Nav,
+    Utils,
 }

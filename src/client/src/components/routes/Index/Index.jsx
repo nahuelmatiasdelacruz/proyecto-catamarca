@@ -1,6 +1,6 @@
 import React from 'react'
-import Employees from "../img/employees2.png";
-import { MUI } from '../helpers/MaterialUI';
+import Employees from "../../../img/employees2.png";
+import { MUI } from '../../../helpers/MaterialUI';
 export const Index = () => {
   return (
     <React.Fragment>

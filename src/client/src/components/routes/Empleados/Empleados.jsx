@@ -1,5 +1,5 @@
 import React from 'react'
-import HeadAdmin from "../../img/head_admin.png";
+import HeadAdmin from "../../../img/head_admin.png";
 
 export const Empleados = () => {
   return (
@@ -14,6 +14,9 @@ export const Empleados = () => {
                 <p>En este espacio, podrá gestionar los empleados, sus altas, licencias, bajas, etc.</p>
               </div>
             </div>
+        </div>
+        <div className="main-area-content">
+
         </div>
     </React.Fragment>
   )
