@@ -9,7 +9,7 @@ const validarJwt = async (req,res,next) => {
         const usuario = await knex.select("*").from("sigap.usuarios").where({id: uid});
         if(usuario.length <= 0) return res.status(400).json({msg: "No existe el usuario"});
         if(usuario[0].registro_activo !== 1) return res.status(400).json({msg: "Usuario inhabilitado"});
-        req.usuario = usuario;
+        req.usuario = usuario[0];
         next();
     }catch(e){
         console.log(e);

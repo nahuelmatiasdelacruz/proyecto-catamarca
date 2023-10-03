@@ -51,7 +51,7 @@ import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
 import Snackbar from '@mui/material/Snackbar';
 
-// Navigation
+// Nav
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Stepper from '@mui/material/Stepper';
@@ -60,6 +60,7 @@ import StepLabel from '@mui/material/StepLabel';
 import Tabs from '@mui/material/Tabs';
 import Modal from '@mui/material/Modal';
 import Tab from '@mui/material/Tab';
+import StepContent from "@mui/material/StepContent";
 
 // Layout
 import Box from '@mui/material/Box';
@@ -97,6 +98,7 @@ const Nav = {
     Step,
     Stepper,
     StepLabel,
+    StepContent,
     Tabs,
     Tab
 }

@@ -7,5 +7,6 @@ const router = Router();
 router.get("/",marcacionesController.getMarcaciones);
 router.post("/",[validarJwt],marcacionesController.addMarcacion);
 router.put("/:id",[validarJwt],marcacionesController.editarMarcacion);
+router.delete("/:id",[validarJwt],marcacionesController.borrarMarcacion);
 
 module.exports = router;

@@ -11,10 +11,9 @@ export const TiempoReal = () => {
   const getMarcaciones = async () => {
     try{
         const result = await axios.get(`${server}/api/marcaciones`);
-        console.log(result.data);
         setMarcaciones(result.data);
     }catch(e){
-        throw new Error(`Hubo un error al buscar las marcaciones: ${e.message}`);
+        console.log(`Hubo un error al buscar las marcaciones: ${e.message}`);
     }
 }
   useEffect(()=>{
@@ -35,10 +34,15 @@ export const TiempoReal = () => {
         </div>
         <div className="main-area-content">
           <MUI.MuiX.DataGrid
-            columns={realTimeColumns}
-            rows={marcaciones}
-            disableRowSelectionOnClick
-          />
+            initialState={{
+              sorting: {
+                  sortModel: [{field: "fecha", sort: "desc"}]
+              }
+              }}
+              columns={realTimeColumns}
+              rows={marcaciones}
+              disableRowSelectionOnClick
+            />
         </div>
     </React.Fragment>
   )
